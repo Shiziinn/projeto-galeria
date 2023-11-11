@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+.titulo {
+    font-size:190px;
+    color:rgb(104, 16, 2);
+    
+    
+    
+}
+.gallery{
+column-count: 3;
+column-gap: 0;
+}
+img {
+width: 100%;
+aspect-ratio: 1/1;
+object-fit: cover;
+
+transition:scale 350ms ease, opacity 350ms linear;
+}
+.gallery:has(img:hover) img:not(:hover) {
+    scale: .9;
+    opacity: .7;
+}
